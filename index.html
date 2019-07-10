@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap =prompt("Nhap vao tu can dich: ");
+    let english = ["Hello", "Red","book","Listen"];
+    let vietNam = ["Xin chao", "Đỏ","Sách","Nghe"];
+
+    for (let i =0; i< english.length; i++) {
+        if (english.indexOf(nhap) !== -1) {
+            document.write("Dich sang tieng Viet la: " + vietNam[english.indexOf(nhap)]); break;
+        } else {
+            document.write("khong tim thay"); break;
+        }
+    } 
+</script>
+</body>
+</html>
